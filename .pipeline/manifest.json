@@ -1,0 +1,55 @@
+[
+  {
+    "msg": "feat: NumPy reference implementation (MED prediction + authentication)",
+    "files": [
+      {
+        "blob": "01___init__.py",
+        "path": "python/rdhei_pec_auth/__init__.py"
+      },
+      {
+        "blob": "02_pipeline.py",
+        "path": "python/rdhei_pec_auth/pipeline.py"
+      }
+    ]
+  },
+  {
+    "msg": "build: python packaging",
+    "files": [
+      {
+        "blob": "03_pyproject.toml",
+        "path": "python/pyproject.toml"
+      }
+    ]
+  },
+  {
+    "msg": "test: reversibility, extraction and tamper-detection tests",
+    "files": [
+      {
+        "blob": "04_test_pipeline.py",
+        "path": "tests/test_pipeline.py"
+      }
+    ]
+  },
+  {
+    "msg": "feat: MATLAB implementation (multi-MSB prediction)",
+    "files": [
+      {
+        "blob": "05_pec_auth.m",
+        "path": "src/pec_auth.m"
+      }
+    ]
+  },
+  {
+    "msg": "ci: run python tests on push",
+    "files": [
+      {
+        "blob": "06_ci.yml",
+        "path": ".github/workflows/ci.yml"
+      }
+    ]
+  },
+  {
+    "msg": "chore: finalize and remove build pipeline",
+    "cleanup": true
+  }
+]

@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "rdhei-pec-auth"
+version = "0.1.0"
+description = "RDHEI + authentication via multi-MSB prediction and prediction-error room reservation"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.20"]
+[tool.setuptools]
+packages = ["rdhei_pec_auth"]

@@ -1,0 +1,37 @@
+name: drip
+
+on:
+  schedule:
+    - cron: '23 5 * * *'    # ~05:23 UTC
+    - cron: '11 15 * * *'   # ~15:11 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: drip
+  cancel-in-progress: false
+
+jobs:
+  drip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Reveal next staged commit
+        run: python .pipeline/drip.py
+
+      - name: Commit and push
+        run: |
+          if [ -f .pipeline/last_msg.txt ]; then
+            MSG="$(cat .pipeline/last_msg.txt)"
+            rm -f .pipeline/last_msg.txt
+            git config user.name  "eeshsaxena"
+            git config user.email "eeshsaxena@gmail.com"
+            git add -A
+            if ! git diff --cached --quiet; then
+              git commit -m "$MSG"
+              git push
+            fi
+          fi
