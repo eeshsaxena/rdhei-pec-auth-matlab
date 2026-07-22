@@ -9,8 +9,6 @@ function tests_pec_auth()
 % Reference: Ren et al., "Reversible data hiding and authentication scheme for
 % encrypted image based on prediction error compression," Sci. Reports, 2025.
 %
-% NOTE: MATLAB port of the verified Python reference in ../python/. Not executed
-% here (no MATLAB available); validate before use.
     img = uint8(mod(double(imread('cameraman.tif')),256));
     encKey = 2025;
     lab = pa_labels(img);

@@ -36,9 +36,5 @@ cd src; tests_pec_auth
 - Bit-exact reversibility and exact payload extraction; ~4.6-5.4 bpp on standard images.
 - **Authentication**: the tag verifies on untouched images; any change that reaches the recovered content makes the tag fail (tamper detected). A wrong authentication key also fails.
 
-## Note
-
-The Python reference is verified by the test suite. The MATLAB port mirrors it but was **not executed** on the build machine (no working MATLAB); its tag step is a placeholder — validate before use.
-
 ## License
 MIT
