@@ -1,18 +1,5 @@
 [
   {
-    "msg": "feat: NumPy reference implementation (MED prediction + authentication)",
-    "files": [
-      {
-        "blob": "01___init__.py",
-        "path": "python/rdhei_pec_auth/__init__.py"
-      },
-      {
-        "blob": "02_pipeline.py",
-        "path": "python/rdhei_pec_auth/pipeline.py"
-      }
-    ]
-  },
-  {
     "msg": "build: python packaging",
     "files": [
       {
