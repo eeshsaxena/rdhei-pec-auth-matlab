@@ -1,14 +1,5 @@
 [
   {
-    "msg": "test: reversibility, extraction and tamper-detection tests",
-    "files": [
-      {
-        "blob": "04_test_pipeline.py",
-        "path": "tests/test_pipeline.py"
-      }
-    ]
-  },
-  {
     "msg": "feat: MATLAB implementation (multi-MSB prediction)",
     "files": [
       {
