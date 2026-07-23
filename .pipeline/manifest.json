@@ -1,14 +1,5 @@
 [
   {
-    "msg": "feat: MATLAB implementation (multi-MSB prediction)",
-    "files": [
-      {
-        "blob": "05_pec_auth.m",
-        "path": "src/pec_auth.m"
-      }
-    ]
-  },
-  {
     "msg": "ci: run python tests on push",
     "files": [
       {
